@@ -17,16 +17,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/alphalm/alphalm-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/alphaplus/alphaplus-vendor.mk)
 
-DEVICE_PATH := device/lge/alphalm
+DEVICE_PATH := device/lge/alphaplus
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.alphalm:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.alphalm
+    $(DEVICE_PATH)/rootdir/etc/fstab.alphaplus:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.alphaplus
 
 $(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/etc/init/hw/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
