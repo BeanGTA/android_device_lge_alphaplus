@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=alphalm
+DEVICE=alphaplus
 VENDOR=lge
 
 # Load extract_utils and do some sanity checks
