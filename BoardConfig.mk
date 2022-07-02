@@ -14,20 +14,20 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/alphalm
+DEVICE_PATH := device/lge/alphaplus
 
 # inherit from common alpha
 -include device/lge/alpha-common/BoardConfigCommon.mk
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=alphalm
+BOARD_KERNEL_CMDLINE += androidboot.hardware=alphaplus
 
 # Recovery
 TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.alphalm
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.alphaplus
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-03-01
 
 # inherit from the proprietary version
--include vendor/lge/alphalm/BoardConfigVendor.mk
+-include vendor/lge/alphaplus/BoardConfigVendor.mk
