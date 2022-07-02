@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit from alphalm device
+# Inherit from alphaplus device
 $(call inherit-product, device/lge/alphalm/device.mk)
 
 # Inherit some common Lineage stuff.
@@ -28,8 +28,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifiers
 
-PRODUCT_NAME := lineage_alphalm
-PRODUCT_DEVICE := alphalm# import $(TARGET_PRODUCT) vendor rc file
+PRODUCT_NAME := lineage_alphaplus
+PRODUCT_DEVICE := alphaplus# import $(TARGET_PRODUCT) vendor rc file
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RELEASE_NAME := G8 ThinQ
@@ -37,12 +37,12 @@ PRODUCT_MODEL := LM-G820
 
 PRODUCT_GMS_CLIENTID_BASE := android-lge
 
-TARGET_VENDOR_PRODUCT_NAME := alphalm_lao_com
-TARGET_VENDOR_DEVICE_NAME := alphalm
+TARGET_VENDOR_PRODUCT_NAME := alphaplus_lao_com
+TARGET_VENDOR_DEVICE_NAME := alphaplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="alphalm_lao_com" \
-    PRIVATE_BUILD_DESC="alphalm_lao_com-user 10 QKQ1.191021.002 202480518b6a5 release-keys"
+    PRODUCT_NAME="alphaplus_lao_com" \
+    PRIVATE_BUILD_DESC="alphaplus_lao_com-user 10 QKQ1.191021.002 202480518b6a5 release-keys"
 
-BUILD_FINGERPRINT := "lge/alphalm_lao_com/alphalm:10/QKQ1.190929.002/210471639d08f:user/release-keys"
+BUILD_FINGERPRINT := "lge/alphaplus_lao_com/alphaplus:10/QKQ1.190929.002/210471639d08f:user/release-keys"
 
